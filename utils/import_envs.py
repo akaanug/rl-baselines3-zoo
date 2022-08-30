@@ -1,3 +1,8 @@
+import gym
+from gym.envs.registration import register
+
+from utils.wrappers import MaskVelocityWrapper
+
 try:
     import pybullet_envs  # pytype: disable=import-error
 except ImportError:
