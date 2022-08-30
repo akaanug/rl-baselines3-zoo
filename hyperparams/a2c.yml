@@ -159,3 +159,10 @@ HopperBulletEnv-v0:
 ReacherBulletEnv-v0:
   <<: *pybullet-defaults
   learning_rate: lin_0.0008
+
+# Not tuned yet
+gridworld-v0:
+  n_envs: 8
+  n_timesteps: 1000000000
+  policy: 'MlpPolicy'
+  ent_coef: 0.0
